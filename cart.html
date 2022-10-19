@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the tea house</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="body-background" onload="createTableInCart()">
+    <header class="header">
+      <nav class="">
+        <div class="nav-pos">
+          <div class="left-box">
+            <a class="" href="">SIGN IN </a>
+            <a href="index.html">
+              <img src="../img/search.png"
+              class="pos-icon0"height="25"alt="Logo"
+            </a>
+            <a href="index.html">
+              <img src="../img/account.png"
+              class="pos-icon1"height="25"alt="Logo"
+            </a>
+
+            <a class="" href="cart.html">
+              <img
+                class="pos-icon2"
+                height="25"
+                src="../img/cart_icon.png"
+                alt="Shoppingcart"
+              />
+            </a>
+          </div>
+          <div class="right-box">
+            <a class="menu-link" href="index.html">HOME </a>
+            <a class="menu-link" href="visitus.html"> VISIT US </a>
+            <a class="menu-link" href="new.html"> NEW </a>
+            <a class="menu-link" href="shop.html"> SHOP </a>
+            <a class="menu-link" href="contact.html"> CONTACT </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="order-title product-title2 new-font">YOUR ORDER</section>
+      <span class="order-nr-title product-title2 new-font">ORDER-Nr.</span>
+
+      <!-- Durch Klick auf Text wird hinzufuegen der Tabelle ausgeloest -->
+      <span class="order-nr-title product-title2 new-font" id="order-nr"
+        >667890</span
+      >
+
+      <hr />
+      <section class="container-table-cart">
+        <table class="order-table">
+          <!-- Überschriften in erster Zeile: koennen bleiben? -->
+          <tr class="new-font-s">
+            <th class="table-head-2"></th>
+            <th class="table-head-2">TEA</th>
+            <th class="table-head-2">ART-NR.</th>
+            <th class="table-head-2">PRICE</th>
+            <th class="table-head-2">WEIGHT</th>
+            <th class="table-head-2">AMOUNT</th>
+          </tr>
+
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <section class="under-product-list">
+        <button class="buy-now-btn buy-btn size-btn">ORDER NOW!</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-div">
+        <p class="impressum-copy-footer">&copy; the tea house 2022</p>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/addToCar.js"></script>
+  </body>
+</html>

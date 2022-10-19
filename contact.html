@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the tea house</title>    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="new-nav">
+        <div class="nav-pos">
+          <div class="left-box">
+            <a class="" href="">SIGN IN </a>
+            <a href="index.html">
+              <img src="../img/search.png" class="pos-icon0"height="25"alt="Logo"
+            </a>
+            <a href="index.html">
+              <img src="../img/account.png"
+              class="pos-icon1"height="25"alt="Logo"
+            </a>
+
+            <a class="" href="cart.html">
+              <img
+                class="pos-icon2"
+                height="25"
+                src="../img/cart_icon.png"
+                alt="Shoppingcart"
+              />
+            </a>
+          </div>
+          <div class="right-box">
+            <a class="menu-link" href="index.html">HOME </a>
+            <a class="menu-link" href="visitus.html"> VISIT US </a>
+            <a class="menu-link" href="new.html"> NEW </a>
+            <a class="menu-link" href="shop.html"> SHOP </a>
+            <a class="menu-link" href="contact.html"> CONTACT </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contact-form-container contactform-border">
+        <form method="post">
+
+          <fieldset class="fieldset-contact ">
+            <legend class="title-contact product-title2 new-font">Contact us</legend>
+                <label class="contact-label">First name</label>
+                <input class="input-contact-fields" id="firstname-contact" type="text" name="firstname" placeholder="First name" pattern="[A-Za-z &Auml &auml &Euml &euml &Iuml &iuml &Ouml &ouml &Uuml &uuml &Yuml &yuml -]{2,40}" maxlength="40" autofocus> <br>
+                  <br>
+                <label class="contact-label">Last name</label>
+                <input class="input-contact-fields" id="lastname-contact" type="text" name="lastname" placeholder="Last name" pattern="[A-Za-z &Auml &auml &Euml &euml &Iuml &iuml &Ouml &ouml &Uuml &uuml &Yuml &yuml -]{2,40}" maxlength="40"> <br>
+                  <br>
+                <label class="contact-label">EMail*</label>
+                <input class="input-contact-fields" id="email-contact" type="email" name="email" placeholder="EMail" required maxlength="40"> <br>
+                  <br>
+                <label class="contact-label">Customer number</label>
+                <input class="input-contact-fields" id="customernumber-contact" type="text" name="customernumber" placeholder="Customer number" pattern="[0-9p]{8}" maxlength="40"> <br>
+                  <br>
+                <label class="contact-label">Subject*</label>
+                <input class="input-contact-fields" id="subject-contact" type="text" name="subject" placeholder="Subject" required maxlength="40"> <br>
+                  <br>
+
+                <label class="contact-label">Choose a topic:</label>
+                <select class="amount-form-select star-form" name="teas" id="teas">
+                  <option value="general">General question</option>
+                  <option value="paris">My order</option>
+                  <option value="london">Problem</option>
+                <select> <br>
+
+                <div class="desc-text-area">
+                  <label class="contact-label description">Description*</label>
+                  <textarea class="textarea-contact input-contact-fields" cols="40" rows="15" maxlength="400" placeholder="Description" required></textarea> <br>
+                </div>
+
+                <label class="cursive">*Mandatory fields</label> <br>
+                <br>
+          </fieldset>
+
+          <fieldset class="fieldset-buttons">
+            <button class="contact-button reset-btn size-btn" type="reset">Reset</button>
+            <button class="contact-button submit-btn size-btn"  type="submit">Submit</button>
+          </fieldset>         
+        </form>
+      </div>    
+    </main>
+
+    <footer class="footer">
+      <div class="footer-div">
+        <p class="impressum-copy-footer">&copy; the tea house 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>
